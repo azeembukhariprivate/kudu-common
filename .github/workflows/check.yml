@@ -1,0 +1,44 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  app:
+    # Copies the shared code into each app, then builds the app and runs its tests with it.
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        app: [kudunmap, kuducopy, kudurescue, kudusync, kudutree]
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Get ${{ matrix.app }}
+        run: git clone --depth 1 https://github.com/azeembukhariprivate/${{ matrix.app }} app
+
+      - name: Copy the shared code in
+        run: python3 sync.py app
+
+      - name: Build ${{ matrix.app }} with it
+        run: |
+          APP=$(echo "${{ matrix.app }}" | tr a-z A-Z)
+          dotnet build "app/src/$APP/$APP.csproj" -c Release
+
+      - name: Run ${{ matrix.app }}'s tests
+        run: |
+          APP=$(echo "${{ matrix.app }}" | tr a-z A-Z)
+          dotnet run --project "app/tests/$APP.Tests" -c Release
