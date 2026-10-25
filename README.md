@@ -47,6 +47,45 @@ The shared files use the namespace `KuduApp`; the copy in each app gets the app'
 `sync.py` also writes a `.kudu-common` file in each app with the commit it copied and the list of shared files;
 files that stop being shared are removed from the apps on the next sync.
 
+## Starting a new KUDU app
+
+New KUDU apps (C# screens, .NET Framework 4.8, like KUDUTREE) use this shared code from the start:
+
+1. **Copy the shared code in.** With the new app cloned next to this folder:
+
+   ```
+   python sync.py ../kudunew
+   ```
+
+   This copies every file in `shared/` into `src/KUDUNEW/` with the app's namespace, and writes `.kudu-common`.
+   Commit both.
+2. **Give the app its own details.** Add `src/KUDUNEW/Core/AppDetails.cs`:
+
+   ```csharp
+   namespace Kudunew.Core
+   {
+       /// <summary>This app's own details, next to the shared AppInfo from kudu-common.</summary>
+       public static partial class AppInfo
+       {
+           public const string Name = "KUDUNEW";
+           public const string RepoName = "kudunew";
+       }
+   }
+   ```
+
+   Anything only this app needs goes here too (or in its own `partial` file next to a shared class, like
+   KUDUNMAP's `Controls/UiNmap.cs`). Its themes (`Themes/*.xaml`, with its own colours) and logo stay its own.
+3. **Check the shared code in its build.** Copy the "Shared code matches kudu-common" step from any app's
+   `.github/workflows/build.yml` (for example
+   [KUDUTREE's](https://github.com/azeembukhariprivate/kudutree/blob/main/.github/workflows/build.yml)) into the new
+   app's workflow, after "Is this a new version?". Add the "Shared code" note to its README too.
+4. **Test future changes against it.** Add the app to the `app:` list in this repository's
+   `.github/workflows/check.yml`, so every change here is built and tested with the new app as well. (The app needs
+   a test project at `tests/KUDUNEW.Tests`, as the others have.)
+
+Copying an existing app's layout (project file, `App.cs`, `Themes/`, installer, workflow) and renaming it is the
+quickest start; the shared files then come from step 1 instead of being copied.
+
 ## The rule
 
 Don't edit a shared file inside an app: each copy starts with a comment saying it comes from here. Every app's build
