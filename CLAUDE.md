@@ -1,6 +1,6 @@
 # kudu-common
 
-Shared code for the KUDU Windows apps (KUDUNMAP, KUDUCOPY, KUDURESCUE, KUDUSYNC, KUDUTREE, KUDUDIFF). It is a code
+Shared code for the KUDU Windows apps (KUDUNMAP, KUDUCOPY, KUDURESCUE, KUDUSYNC, KUDUTREE, KUDUDIFF, KUDUPST). It is a code
 repository, not a library or package: `sync.py` copies the files in `shared/` into each app, replacing the namespace
 `KuduApp` with the app's own, and records the kudu-common commit in the app's `.kudu-common` file.
 
@@ -21,7 +21,7 @@ repository, not a library or package: `sync.py` copies the files in `shared/` in
 
 1. Edit the file in `shared/` (keep it free of anything app-specific; apps put their details in `Core/AppDetails.cs`).
 2. Commit and push here.
-3. Run `python sync.py ../kudunmap ../kuducopy ../kudurescue ../kudusync ../kudutree ../kududiff`, then build, test,
+3. Run `python sync.py ../kudunmap ../kuducopy ../kudurescue ../kudusync ../kudutree ../kududiff ../kudupst`, then build, test,
    commit and push each app. Each app's build fails if its copy differs from the kudu-common commit it names.
 4. `.github/workflows/check.yml` builds and tests every app with the current shared code. A new app gets added to its
    matrix (and to the README lists).

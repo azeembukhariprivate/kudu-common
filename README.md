@@ -3,7 +3,8 @@
 Shared code for the KUDU Windows apps: [KUDUNMAP](https://github.com/azeembukhariprivate/kudunmap),
 [KUDUCOPY](https://github.com/azeembukhariprivate/kuducopy), [KUDURESCUE](https://github.com/azeembukhariprivate/kudurescue),
 [KUDUSYNC](https://github.com/azeembukhariprivate/kudusync), [KUDUTREE](https://github.com/azeembukhariprivate/kudutree)
-and [KUDUDIFF](https://github.com/azeembukhariprivate/kududiff).
+[KUDUDIFF](https://github.com/azeembukhariprivate/kududiff)
+and [KUDUPST](https://github.com/azeembukhariprivate/kudupst).
 
 The same building blocks used to be copied into each app by hand, so a fix made in one app didn't always reach the
 others. Now they live here, and a script copies them into every app.
@@ -40,7 +41,7 @@ The shared files use the namespace `KuduApp`; the copy in each app gets the app'
 2. Copy it into the apps (with the apps cloned next to this folder):
 
    ```
-   python sync.py ../kudunmap ../kuducopy ../kudurescue ../kudusync ../kudutree ../kududiff
+   python sync.py ../kudunmap ../kuducopy ../kudurescue ../kudusync ../kudutree ../kududiff ../kudupst
    ```
 
 3. Commit and push each app. Its build tests it again on Windows and, if the version number went up, releases it.
