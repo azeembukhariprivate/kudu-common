@@ -31,3 +31,8 @@ KUDUPACK and KUDUCK don't use kudu-common.
 ## Starting a new KUDU app
 
 Follow the "Starting a new KUDU app" checklist in README.md. Azeem creates the GitHub repository; Claude can't.
+
+## Ideas for later
+
+`IDEAS.md` is the pending list of additions to the apps and possible new apps. Take them one at a time when Azeem asks;
+when one is built, move it to "Done" there with its version.
