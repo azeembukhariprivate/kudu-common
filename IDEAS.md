@@ -93,6 +93,19 @@ Suggested first: KUDUTREE's "safe to clean" list, KUDUSYNC's earlier versions of
 
 Suggested first: KUDUTEXT (nobody's data is at risk), then KUDUCLONE and KUDUSHRINK.
 
+### A browser game (on hold)
+- [ ] A 2D side-scrolling platformer played in the browser, with the feel of classic Mario and Lion King games but a world
+      entirely our own (no characters, names, music or look from either). Free, no ads or sign-up, hosted on GitHub Pages.
+      Agreed so far:
+  - **Art:** all drawn by code: layered scrolling scenes with depth, smooth animation, light, weather and particles.
+  - **Hero and world:** a young kudu on the African savanna (sunrise savanna, jungle, canyons, a stampede chase, a night storm).
+  - **Devices:** PC (keyboard and game controller) and phone (on-screen touch buttons, played sideways).
+  - **Moves:** run, jump and stomp; horn charge (breaks rocks, knocks enemies over); wall jump and hanging on ledges;
+    special scenes riding a river log, sliding down slopes and gliding.
+  - **Sound:** music and effects made by code (African-inspired drums, marimba and flute).
+  - **First release:** one complete world, about 4–5 levels and a boss, with checkpoints, lives and collectibles.
+  - **Still to decide:** the name (ideas: KUDU Quest, KUDU: Savanna Run, Horns of the Savanna). Azeem creates the repository.
+
 ## Done
 
 - *(nothing yet)*
