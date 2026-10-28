@@ -101,7 +101,11 @@ Suggested first: KUDUTEXT (nobody's data is at risk), then KUDUCLONE and KUDUSHR
   - **Hero:** Inaara, a young cheerful girl drawn from Azeem's character sheet (kept as a stylised cartoon): black wavy
     shoulder-length hair, gold flower hair clip, big brown eyes, black dress with small cream flowers and puffed sleeves,
     grey pearl necklace, white strap shoes. Expressions: happy, excited, playful, thoughtful, surprised, shy.
-  - **Art:** all drawn by code: layered scrolling scenes with depth, smooth animation, light, weather and particles.
+  - **Her face:** her exact face, cut from the character sheet (happy, excited, playful, surprised and shy) on the
+    animated body drawn by code; her whole figure from the sheet on the title screen; her face as the lives icon.
+    Azeem chose a public game with her real face, as her parent or guardian.
+  - **Art:** everything else drawn by code: layered scrolling scenes with depth, smooth animation, light, weather and
+    particles.
   - **World:** Kerala: backwaters (houseboats, Kochi fishing nets, palms, a floating log), Munnar tea hills, a
     rainforest waterfall with hornbills, a monsoon night on laterite cliffs, and a snake-boat race chase as the finale.
   - **Devices:** PC (keyboard and game controller) and phone (on-screen touch buttons, played sideways).
