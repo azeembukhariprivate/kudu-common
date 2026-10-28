@@ -93,18 +93,24 @@ Suggested first: KUDUTREE's "safe to clean" list, KUDUSYNC's earlier versions of
 
 Suggested first: KUDUTEXT (nobody's data is at risk), then KUDUCLONE and KUDUSHRINK.
 
-### A browser game (on hold)
-- [ ] A 2D side-scrolling platformer played in the browser, with the feel of classic Mario and Lion King games but a world
-      entirely our own (no characters, names, music or look from either). Free, no ads or sign-up, hosted on GitHub Pages.
-      Agreed so far:
+### Inaara, a browser game (on hold, waiting for "build")
+- [ ] A 2D side-scrolling platformer played in the browser (also installable from the browser to a phone or PC home
+      screen, works offline), with the feel of classic Mario and Lion King games but a world entirely our own. Free, no
+      ads or sign-up, hosted on GitHub Pages. Concept screenshots were made and shared. Agreed so far:
+  - **Name:** Inaara. Azeem creates the repository.
+  - **Hero:** Inaara, a young cheerful girl drawn from Azeem's character sheet (kept as a stylised cartoon): black wavy
+    shoulder-length hair, gold flower hair clip, big brown eyes, black dress with small cream flowers and puffed sleeves,
+    grey pearl necklace, white strap shoes. Expressions: happy, excited, playful, thoughtful, surprised, shy.
   - **Art:** all drawn by code: layered scrolling scenes with depth, smooth animation, light, weather and particles.
-  - **Hero and world:** a young kudu on the African savanna (sunrise savanna, jungle, canyons, a stampede chase, a night storm).
+  - **World:** Kerala: backwaters (houseboats, Kochi fishing nets, palms, a floating log), Munnar tea hills, a
+    rainforest waterfall with hornbills, a monsoon night on laterite cliffs, and a snake-boat race chase as the finale.
   - **Devices:** PC (keyboard and game controller) and phone (on-screen touch buttons, played sideways).
-  - **Moves:** run, jump and stomp; horn charge (breaks rocks, knocks enemies over); wall jump and hanging on ledges;
-    special scenes riding a river log, sliding down slopes and gliding.
-  - **Sound:** music and effects made by code (African-inspired drums, marimba and flute).
+  - **Moves:** run, jump and stomp; spin dash (dress flares, breaks clay pots, knocks enemies over; the gold clip glows
+    when it's ready); wall jump and hanging on ledges; banana-leaf glide; riding and sliding scenes.
+  - **Collect and avoid:** jasmine flowers (a full garland is an extra life); cheeky monkeys, crows and crabs that run
+    off when bonked (gentle, no one gets hurt).
+  - **Sound:** music and effects made by code (Kerala-inspired: chenda drums, flute, temple bells).
   - **First release:** one complete world, about 4–5 levels and a boss, with checkpoints, lives and collectibles.
-  - **Still to decide:** the name (ideas: KUDU Quest, KUDU: Savanna Run, Horns of the Savanna). Azeem creates the repository.
 
 ## Done
 
