@@ -93,29 +93,10 @@ Suggested first: KUDUTREE's "safe to clean" list, KUDUSYNC's earlier versions of
 
 Suggested first: KUDUTEXT (nobody's data is at risk), then KUDUCLONE and KUDUSHRINK.
 
-### Inaara, a browser game (on hold, waiting for "build")
-- [ ] A 2D side-scrolling platformer played in the browser (also installable from the browser to a phone or PC home
-      screen, works offline), with the feel of classic Mario and Lion King games but a world entirely our own. Free, no
-      ads or sign-up, hosted on GitHub Pages. Concept screenshots were made and shared. Agreed so far:
-  - **Name:** Inaara. Azeem creates the repository.
-  - **Hero:** Inaara, a young cheerful girl drawn from Azeem's character sheet (kept as a stylised cartoon): black wavy
-    shoulder-length hair, gold flower hair clip, big brown eyes, black dress with small cream flowers and puffed sleeves,
-    grey pearl necklace, white strap shoes. Expressions: happy, excited, playful, thoughtful, surprised, shy.
-  - **Her face:** her exact face, cut from the character sheet (happy, excited, playful, surprised and shy) on the
-    animated body drawn by code; her whole figure from the sheet on the title screen; her face as the lives icon.
-    Azeem chose a public game with her real face, as her parent or guardian.
-  - **Art:** everything else drawn by code: layered scrolling scenes with depth, smooth animation, light, weather and
-    particles.
-  - **World:** Kerala: backwaters (houseboats, Kochi fishing nets, palms, a floating log), Munnar tea hills, a
-    rainforest waterfall with hornbills, a monsoon night on laterite cliffs, and a snake-boat race chase as the finale.
-  - **Devices:** PC (keyboard and game controller) and phone (on-screen touch buttons, played sideways).
-  - **Moves:** run, jump and stomp; spin dash (dress flares, breaks clay pots, knocks enemies over; the gold clip glows
-    when it's ready); wall jump and hanging on ledges; banana-leaf glide; riding and sliding scenes.
-  - **Collect and avoid:** jasmine flowers (a full garland is an extra life); cheeky monkeys, crows and crabs that run
-    off when bonked (gentle, no one gets hurt).
-  - **Sound:** music and effects made by code (Kerala-inspired: chenda drums, flute, temple bells).
-  - **First release:** one complete world, about 4–5 levels and a boss, with checkpoints, lives and collectibles.
-
 ## Done
 
-- *(nothing yet)*
+- **Inaara 1.0** (new app, its own repository `inaara`): a Kerala platform game for the browser, played at
+  https://azeembukhariprivate.github.io/inaara/. Inaara's real face from her sheet (Azeem's choice, as her parent or
+  guardian) on a body drawn by code; five levels (Backwaters, Munnar Tea Hills, Rainforest Falls, Monsoon Night, The
+  Boat Race) and the Monkey Chief; run, jump, spin, wall jump, ledges, banana-leaf glide; jasmine, golden lotuses,
+  lamps; music made by code; PC, game controller and phone; keeps working offline.
