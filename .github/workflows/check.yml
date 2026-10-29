@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        app: [kudunmap, kuducopy, kudurescue, kudusync, kudutree, kududiff, kudupst]
+        app: [kudunmap, kuducopy, kudurescue, kudusync, kudutree, kududiff, kudupst, kudubrowse]
 
     steps:
       - name: Check out

@@ -23,8 +23,7 @@ repository, not a library or package: `sync.py` copies the files in `shared/` in
 2. Commit and push here.
 3. Run `python sync.py ../kudunmap ../kuducopy ../kudurescue ../kudusync ../kudutree ../kududiff ../kudupst ../kudubrowse`, then build, test,
    commit and push each app. Each app's build fails if its copy differs from the kudu-common commit it names.
-4. `.github/workflows/check.yml` builds and tests every app with the current shared code (not KUDUBROWSE while its
-   repository is private: the check can't download it). A new app gets added to its
+4. `.github/workflows/check.yml` builds and tests every app with the current shared code. A new app gets added to its
    matrix (and to the README lists).
 
 KUDUPACK and KUDUCK don't use kudu-common.

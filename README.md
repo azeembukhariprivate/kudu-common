@@ -4,7 +4,7 @@ Shared code for the KUDU Windows apps: [KUDUNMAP](https://github.com/azeembukhar
 [KUDUCOPY](https://github.com/azeembukhariprivate/kuducopy), [KUDURESCUE](https://github.com/azeembukhariprivate/kudurescue),
 [KUDUSYNC](https://github.com/azeembukhariprivate/kudusync), [KUDUTREE](https://github.com/azeembukhariprivate/kudutree)
 [KUDUDIFF](https://github.com/azeembukhariprivate/kududiff)
-[KUDUPST](https://github.com/azeembukhariprivate/kudupst) and KUDUBROWSE (being built, private for now).
+[KUDUPST](https://github.com/azeembukhariprivate/kudupst) and [KUDUBROWSE](https://github.com/azeembukhariprivate/kudubrowse).
 
 The same building blocks used to be copied into each app by hand, so a fix made in one app didn't always reach the
 others. Now they live here, and a script copies them into every app.
