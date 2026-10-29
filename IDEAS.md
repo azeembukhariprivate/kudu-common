@@ -100,3 +100,7 @@ Suggested first: KUDUTEXT (nobody's data is at risk), then KUDUCLONE and KUDUSHR
   guardian) on a body drawn by code; five levels (Backwaters, Munnar Tea Hills, Rainforest Falls, Monsoon Night, The
   Boat Race) and the Monkey Chief; run, jump, spin, wall jump, ledges, banana-leaf glide; jasmine, golden lotuses,
   lamps; music made by code; PC, game controller and phone; keeps working offline.
+- **KUDUBROWSE 1.0** (new app, its own repository `kudubrowse`): a private everyday web browser on Microsoft's WebView2:
+  tabs, groups and side by side, built-in blocking of ads, trackers, cookie banners and pop-ups, a password manager
+  (filled only when picked, Windows Hello, leak check), rooms with separate logins, private windows, moving from Chrome,
+  sleeping tabs, reading mode, whole-page screenshot and PDF, and a "What KUDUBROWSE can do" window.
