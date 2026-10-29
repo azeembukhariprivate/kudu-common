@@ -58,6 +58,28 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [ ] Resize and watermark many photos at once.
 - [ ] Put PDF pages in order by dragging.
 
+### KUDUBROWSE (web browser)
+- [ ] Tabs down the side (a list on the left, for many tabs).
+- [ ] Find any tab (Ctrl+Shift+A): open tabs, recently closed tabs, bookmarks and history by typing a few letters.
+- [ ] Saved tab sets ("Work", "Trip planning"): put a set of tabs away and open them all again later.
+- [ ] Mute a tab, with a sound icon on tabs that are playing.
+- [ ] A video in a small floating window that stays on top.
+- [ ] Dark pages everywhere: turn any site dark, even ones without a dark look.
+- [ ] Read later: keep a page to read afterwards, saved so it opens without the internet.
+- [ ] Two-step sign-in codes (the 6-digit codes that change every 30 seconds) in the password manager, filled in with
+      the password.
+- [ ] Secure connections only: warn before opening a site without https.
+- [ ] Clear when closing: forget cookies and history when the browser closes, for some sites or all.
+- [ ] A page of what each site may use (camera, microphone, location, notifications), with a way to take it back.
+- [ ] Chrome extensions (the engine can load them). *(Extensions can read the pages you visit, so this needs care to
+      keep the "collects nothing" promise.)*
+- [ ] The same bookmarks and passwords on two PCs without an account: an encrypted copy in a folder you choose
+      (OneDrive, Google Drive).
+- [ ] Sites as apps: WhatsApp Web or Gmail in its own window with its own taskbar icon.
+- [ ] Send a page to your phone with a QR code of its address.
+
+Suggested first: tabs down the side, find any tab, mute a tab, the floating video and dark pages; then the sign-in codes.
+
 ### All the apps (through kudu-common)
 - [ ] Other languages for the apps' text.
 - [ ] Command-line options, for scripts.
