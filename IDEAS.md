@@ -104,3 +104,7 @@ Suggested first: KUDUTEXT (nobody's data is at risk), then KUDUCLONE and KUDUSHR
   tabs, groups and side by side, built-in blocking of ads, trackers, cookie banners and pop-ups, a password manager
   (filled only when picked, Windows Hello, leak check), rooms with separate logins, private windows, moving from Chrome,
   sleeping tabs, reading mode, whole-page screenshot and PDF, and a "What KUDUBROWSE can do" window.
+- **KUDUBROWSE 1.1**: a download manager. Big files (20 MB and more) come faster in up to six pieces at once when the
+  site allows it; pause and carry on, even after closing the browser; dropped connections tried again and "Try again"
+  for stopped downloads; the list kept for next time (not for private windows); choose the folder, ask each time, or
+  sort into folders by type. Files the browser fetches itself get Windows' "from the internet" mark and virus check.
