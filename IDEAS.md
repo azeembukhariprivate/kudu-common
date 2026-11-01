@@ -64,7 +64,7 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [ ] Saved tab sets ("Work", "Trip planning"): put a set of tabs away and open them all again later.
 - [x] Mute a tab, with a sound icon on tabs that are playing. *(Done in 1.3.)*
 - [x] A video in a small floating window that stays on top. *(Done in 1.5.)*
-- [ ] Dark pages everywhere: turn any site dark, even ones without a dark look.
+- [x] Dark pages everywhere: turn any site dark, even ones without a dark look. *(Done in 1.6.)*
 - [ ] Read later: keep a page to read afterwards, saved so it opens without the internet.
 - [ ] Two-step sign-in codes (the 6-digit codes that change every 30 seconds) in the password manager, filled in with
       the password.
