@@ -90,8 +90,6 @@ Suggested first: KUDUTREE's "safe to clean" list, KUDUSYNC's earlier versions of
 ## New apps
 
 ### For everyone (things people usually pay for)
-- [ ] **KUDUTEXT**: subtitles and transcripts from any video or recording, offline, in many languages (an open
-      speech-recognition model, as KUDUCK uses one for removing backgrounds).
 - [ ] **KUDUCLONE**: copy Windows to a new SSD, or make a full disk backup image and restore it. *(Riskiest to build;
       needs the most testing.)*
 - [ ] **KUDUSHRINK**: make videos smaller, convert them, cut a clip, take out the sound (built on FFmpeg, with simple
@@ -113,10 +111,15 @@ Suggested first: KUDUTREE's "safe to clean" list, KUDUSYNC's earlier versions of
       it, turning things off safely with an undo, and comparing with an earlier snapshot.
 - [ ] **KUDUDATA**: open huge CSV, JSON and SQLite files straight away: a table, filters, search, saving a filtered part.
 
-Suggested first: KUDUTEXT (nobody's data is at risk), then KUDUCLONE and KUDUSHRINK.
+Suggested next: KUDUCLONE and KUDUSHRINK.
 
 ## Done
 
+- **KUDUTEXT 1.0** (new app, its own repository `kudutext`): speech to text and subtitles on the user's own PC with
+  whisper.cpp: a list of videos and recordings done one after another, Fast/Good/Best speech models downloaded once,
+  about 100 languages or English from any of them, .srt/.vtt/.txt saved without replacing other files; a window to
+  check and correct the text (play a line, fix words and times, split, join, replace everywhere); and the subtitles
+  put into the video as a track or written into the picture (FFmpeg, downloaded once).
 - **Inaara 1.0** (new app, its own repository `inaara`): a Kerala platform game for the browser, played at
   https://azeembukhariprivate.github.io/inaara/. Inaara's real face from her sheet (Azeem's choice, as her parent or
   guardian) on a body drawn by code; five levels (Backwaters, Munnar Tea Hills, Rainforest Falls, Monsoon Night, The
