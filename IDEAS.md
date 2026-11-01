@@ -59,10 +59,10 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [ ] Put PDF pages in order by dragging.
 
 ### KUDUBROWSE (web browser)
-- [ ] Tabs down the side (a list on the left, for many tabs).
-- [ ] Find any tab (Ctrl+Shift+A): open tabs, recently closed tabs, bookmarks and history by typing a few letters.
+- [x] Tabs down the side (a list on the left, for many tabs). *(Done in 1.3.)*
+- [x] Find any tab (Ctrl+Shift+A): open tabs, recently closed tabs, bookmarks and history by typing a few letters. *(Done in 1.4.)*
 - [ ] Saved tab sets ("Work", "Trip planning"): put a set of tabs away and open them all again later.
-- [ ] Mute a tab, with a sound icon on tabs that are playing.
+- [x] Mute a tab, with a sound icon on tabs that are playing. *(Done in 1.3.)*
 - [ ] A video in a small floating window that stays on top.
 - [ ] Dark pages everywhere: turn any site dark, even ones without a dark look.
 - [ ] Read later: keep a page to read afterwards, saved so it opens without the internet.
