@@ -66,8 +66,8 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [x] A video in a small floating window that stays on top. *(Done in 1.5.)*
 - [x] Dark pages everywhere: turn any site dark, even ones without a dark look. *(Done in 1.6.)*
 - [ ] Read later: keep a page to read afterwards, saved so it opens without the internet.
-- [ ] Two-step sign-in codes (the 6-digit codes that change every 30 seconds) in the password manager, filled in with
-      the password.
+- [x] Two-step sign-in codes (the 6-digit codes that change every 30 seconds) in the password manager, filled in with
+      the password. *(Done in 1.7.)*
 - [ ] Secure connections only: warn before opening a site without https.
 - [ ] Clear when closing: forget cookies and history when the browser closes, for some sites or all.
 - [ ] A page of what each site may use (camera, microphone, location, notifications), with a way to take it back.
