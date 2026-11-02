@@ -24,7 +24,7 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [ ] Watch a folder over time ("Downloads grew 4 GB this month").
 
 ### KUDUSYNC (keeping folders in step)
-- [ ] Keep earlier versions of changed files, so a backup can go back in time.
+- [x] Keep earlier versions of changed files, so a backup can go back in time. *(Done in KUDUSYNC 1.2: "Earlier versions".)*
 - [ ] Back up to a NAS or network share, reconnecting by itself.
 - [ ] An email or notification when a scheduled backup fails.
 
