@@ -18,8 +18,8 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [ ] More kinds of drives (memory cards and USB sticks formatted on a Mac or a camera).
 
 ### KUDUTREE (what's taking up space)
-- [ ] A "safe to clean" list: temporary files, old Windows update leftovers, browser caches, with how much space each
-      gives back (to the Recycle Bin).
+- [x] A "safe to clean" list: temporary files, old Windows update leftovers, browser caches, with how much space each
+      gives back (to the Recycle Bin). *(Done in KUDUTREE 1.2.)*
 - [ ] Find photos that look alike, not only exact copies.
 - [ ] Watch a folder over time ("Downloads grew 4 GB this month").
 
