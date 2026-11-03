@@ -46,10 +46,10 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [ ] Three-way merge. *(Left out of v1 on purpose: a new scope to agree.)*
 
 ### KUDUNMAP (network scans)
-- [ ] Save scans and compare them ("a new device appeared", "port 3389 opened").
-- [ ] A drawing of the network.
-- [ ] Scheduled scans with alerts.
-- [ ] A note in plain words on what each open port could risk.
+- [x] Save scans and compare them ("a new device appeared", "port 3389 opened"). (1.0)
+- [x] A drawing of the network. (1.1)
+- [x] Scheduled scans with alerts. (1.1)
+- [x] A note in plain words on what each open port could risk. (1.1)
 
 ### KUDUCK (images and PDFs)
 - [ ] Copy text from pictures and scanned PDFs (Windows' own text recognition).
@@ -115,6 +115,10 @@ Suggested next: KUDUCLONE and KUDUSHRINK.
 
 ## Done
 
+- **KUDUNMAP 1.1**: a note in plain words for every open port (Fine, Worth a look or Risky) and a "Worth a look" tab;
+  a map of the devices found around the router, with a guess of what each one is, saved as a picture; and scheduled
+  scans that run by themselves (Windows asks for administrator rights once), keep each run in History and say what
+  changed. Saving and comparing scans was already in 1.0.
 - **KUDUTEXT 1.0** (new app, its own repository `kudutext`): speech to text and subtitles on the user's own PC with
   whisper.cpp: a list of videos and recordings done one after another, Fast/Good/Best speech models downloaded once,
   about 100 languages or English from any of them, .srt/.vtt/.txt saved without replacing other files; a window to
