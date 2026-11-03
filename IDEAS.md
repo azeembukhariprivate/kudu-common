@@ -7,7 +7,7 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 ## Additions to the apps already built
 
 ### KUDUPST (Outlook files)
-- [ ] Open several files at once and search across all of them.
+- [x] Open several files at once and search across all of them. (1.3)
 - [ ] Find duplicate emails, and export without the copies.
 - [ ] Show whole conversations together.
 - [ ] Save the results as a new PST file that Outlook can open.
@@ -85,7 +85,7 @@ Suggested first: tabs down the side, find any tab, mute a tab, the floating vide
 - [ ] Command-line options, for scripts.
 - [ ] A portable mode that keeps settings next to the app instead of in the registry.
 
-Suggested first: KUDUTREE's "safe to clean" list, KUDUSYNC's earlier versions of files, KUDUPST's search across files.
+The three suggested first (KUDUTREE's "safe to clean" list, KUDUSYNC's earlier versions of files, KUDUPST's search across files) are done.
 
 ## New apps
 
@@ -115,6 +115,9 @@ Suggested next: KUDUCLONE and KUDUSHRINK.
 
 ## Done
 
+- **KUDUPST 1.3**: several files open at once, like Outlook: each PST/OST has its own entry in the folder list (with its
+  contacts, calendar and found deleted items), single emails are listed together, search looks in all open files and
+  says which file each result is from, exports work across files, and the open files come back at the next start.
 - **KUDUNMAP 1.1**: a note in plain words for every open port (Fine, Worth a look or Risky) and a "Worth a look" tab;
   a map of the devices found around the router, with a guess of what each one is, saved as a picture; and scheduled
   scans that run by themselves (Windows asks for administrator rights once), keep each run in History and say what
