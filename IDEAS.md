@@ -90,7 +90,7 @@ The three suggested first (KUDUTREE's "safe to clean" list, KUDUSYNC's earlier v
 ### KUDUPIX (photos and videos)
 - [ ] A map of where photos were taken (pins from the place stored in photos; map pictures from OpenStreetMap, the only
       part that goes online, and only while the map is open).
-- [ ] People: find faces, group the same person, name them once (on the PC with a small face model, nothing sent).
+- [x] People: find faces, group the same person, name them once (on the PC with a small face model, nothing sent). (1.1)
 
 ## New apps
 
@@ -120,6 +120,10 @@ Suggested next: KUDUCLONE and KUDUSHRINK.
 
 ## Done
 
+- **KUDUPIX 1.1**: People: faces found by themselves in the background on the PC (YuNet and SFace from OpenCV, run by
+  ONNX Runtime, included in the installer), the same person's faces grouped, named once, new photos joining by
+  themselves, "Is this Mum?" for unsure faces, fixing mistakes (not this person, not a face, join, hide), face frames in
+  the viewer, names in search. Photos only; faces too small to tell apart are only named by hand.
 - **KUDUPIX 1.0** (new app, its own repository `kudupix`): photos and videos organised, in the spirit of the old photo
   managers: everything in the chosen folders (watched for changes) in one fast grid by day or month, stars, tags and
   albums (kept in its own file, photos untouched), search, a viewer with simple fixes that never spoil the original (save
