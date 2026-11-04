@@ -87,6 +87,11 @@ Suggested first: tabs down the side, find any tab, mute a tab, the floating vide
 
 The three suggested first (KUDUTREE's "safe to clean" list, KUDUSYNC's earlier versions of files, KUDUPST's search across files) are done.
 
+### KUDUPIX (photos and videos)
+- [ ] A map of where photos were taken (pins from the place stored in photos; map pictures from OpenStreetMap, the only
+      part that goes online, and only while the map is open).
+- [ ] People: find faces, group the same person, name them once (on the PC with a small face model, nothing sent).
+
 ## New apps
 
 ### For everyone (things people usually pay for)
@@ -115,6 +120,12 @@ Suggested next: KUDUCLONE and KUDUSHRINK.
 
 ## Done
 
+- **KUDUPIX 1.0** (new app, its own repository `kudupix`): photos and videos organised, in the spirit of the old photo
+  managers: everything in the chosen folders (watched for changes) in one fast grid by day or month, stars, tags and
+  albums (kept in its own file, photos untouched), search, a viewer with simple fixes that never spoil the original (save
+  a copy, or save over it with the original kept to put back), videos played in place, duplicates (exact and resized
+  copies) to the Recycle Bin, export without the place, slideshow and printing. Later: a map of where photos were taken,
+  and people (faces), done on the PC.
 - **KUDUPST 1.3**: several files open at once, like Outlook: each PST/OST has its own entry in the folder list (with its
   contacts, calendar and found deleted items), single emails are listed together, search looks in all open files and
   says which file each result is from, exports work across files, and the open files come back at the next start.
