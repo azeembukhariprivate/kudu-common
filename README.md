@@ -27,6 +27,7 @@ so downloading or cloning an app is all you need.
 | `Core/Args.cs` | Quotes and splits command-line arguments |
 | `Views/Dialogs.cs` | Message boxes, file and folder pickers |
 | `Views/Screenshots.cs` | The self-test's pictures of every window |
+| `Views/SafetyNet.cs` | A plain message when the app has to close after an error behind the window |
 
 Each app keeps for itself:
 - `Core/AppDetails.cs`: its name and repository (plus anything only it needs, such as KUDUNMAP's Nmap links).
