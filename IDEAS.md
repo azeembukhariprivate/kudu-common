@@ -80,6 +80,17 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 
 Suggested first: tabs down the side, find any tab, mute a tab, the floating video and dark pages; then the sign-in codes.
 
+### KUDUTUNES (music into notes; a web app)
+- [ ] Sheet music (the five-line staff), which needs the beat and bar lines worked out.
+- [ ] A split between two instruments: a dividing line you set, and moving single notes across.
+- [ ] Tidy the timing so notes line up with the beat; move everything to another key.
+- [ ] Live listening; printing.
+
+### KUDUTEXT (speech to text)
+- [ ] Say who is speaking (on the PC, with a small model).
+- [ ] A short summary of a long recording. *(Needs a large model on the PC or sending the text to a service; the second
+      would break "nothing leaves your PC".)*
+
 ### All the apps (through kudu-common)
 - [ ] Other languages for the apps' text.
 - [ ] Command-line options, for scripts.
@@ -109,6 +120,14 @@ The three suggested first (KUDUTREE's "safe to clean" list, KUDUSYNC's earlier v
       with extra care.)*
 - [ ] **KUDURENAME**: rename thousands of files at once by pattern, date taken or music details, with a preview.
 
+### Web apps (run in the browser, nothing uploaded, like KUDUTUNES)
+- [ ] **A PDF editor**: change text, put pages in order, fill in forms and sign, all in the browser. *(Online PDF sites
+      either charge or upload your files.)*
+- [ ] **A background remover and photo enlarger**: paid sites charge per picture; free models now run in a browser.
+- [ ] **A teleprompter with recording**: the script scrolls while the camera records; the video is saved on the device.
+- [ ] **An invoice and receipt maker**: kept on the device, saved as PDF. *(Small traders pay monthly for this.)*
+- [ ] **A resume builder** that doesn't ask for money at the download step.
+
 ### For technical people
 - [ ] **KUDULOG**: Windows event logs (.evtx, our own reader) and text logs on one timeline, with instant search, filters,
       ready-made checks (failed sign-ins, new services, unexpected restarts) and export.
@@ -116,7 +135,27 @@ The three suggested first (KUDUTREE's "safe to clean" list, KUDUSYNC's earlier v
       it, turning things off safely with an undo, and comparing with an earlier snapshot.
 - [ ] **KUDUDATA**: open huge CSV, JSON and SQLite files straight away: a table, filters, search, saving a filtered part.
 
-Suggested next: KUDUCLONE and KUDUSHRINK.
+Suggested next, when new apps are wanted again: KUDUSHRINK, KUDUSNAP and KUDUREMOVE (wanted by many, low risk), then the
+PDF editor web app. KUDUCLONE and KUDUVAULT only once there are people to test them: mistakes there cost people their data.
+
+**On hold (Azeem, November 2026): no new apps for now. The apps already made are improved first.**
+
+## Agreed next for the apps already made (November 2026)
+
+In this order, each as its own version:
+
+1. **KUDUCK**: starts in the notification area (by the clock) with no duck on the desktop; the duck is something to
+   switch on, and can be made bigger or smaller.
+2. **KUDUPST**: save as a new PST file that Outlook can open.
+3. **Other languages in every app, Malayalam among them.**
+4. **KUDURESCUE**: preview before getting files back; repair photos that come back only partly whole.
+5. **KUDUSYNC**: say so when a scheduled backup fails.
+6. **KUDUCK**: fill in and sign PDF forms; copy text from pictures and scanned PDFs.
+7. **KUDUDIFF**: compare two folders; compare Word, Excel and PDF files as text.
+8. **KUDUTEXT**: say who is speaking.
+9. **KUDUTUNES**: sheet music; a split between two instruments.
+
+Then: listing the apps in winget (free; Azeem tests the apps for some days first), and perhaps the Microsoft Store.
 
 ## Done
 
