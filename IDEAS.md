@@ -85,6 +85,7 @@ Suggested first: tabs down the side, find any tab, mute a tab, the floating vide
 - [ ] A split between two instruments: a dividing line you set, and moving single notes across.
 - [ ] Tidy the timing so notes line up with the beat; move everything to another key.
 - [ ] Live listening; printing.
+- [ ] Other languages, like the Windows apps (left for later, Azeem's choice).
 
 ### KUDUTEXT (speech to text)
 - [ ] Say who is speaking (on the PC, with a small model).
@@ -92,7 +93,7 @@ Suggested first: tabs down the side, find any tab, mute a tab, the floating vide
       would break "nothing leaves your PC".)*
 
 ### All the apps (through kudu-common)
-- [ ] Other languages for the apps' text.
+- [x] Other languages for the apps' text. (November 2026)
 - [ ] Command-line options, for scripts.
 - [ ] A portable mode that keeps settings next to the app instead of in the registry.
 
@@ -147,7 +148,7 @@ In this order, each as its own version:
 1. **KUDUCK**: starts in the notification area (by the clock) with no duck on the desktop; the duck is something to
    switch on, and can be made bigger or smaller.
 2. **KUDUPST**: save as a new PST file that Outlook can open.
-3. **Other languages in every app, Malayalam among them.**
+3. ~~Other languages in every app, Malayalam among them.~~ Done (see below).
 4. **KUDURESCUE**: preview before getting files back; repair photos that come back only partly whole.
 5. **KUDUSYNC**: say so when a scheduled backup fails.
 6. **KUDUCK**: fill in and sign PDF forms; copy text from pictures and scanned PDFs.
@@ -158,6 +159,12 @@ In this order, each as its own version:
 Then: listing the apps in winget (free; Azeem tests the apps for some days first), and perhaps the Microsoft Store.
 
 ## Done
+
+- **Other languages** (November 2026): every Windows app can be used in English, Malayalam, Hindi, Spanish, French and
+  Arabic (the windows mirrored for right-to-left), starting in the language Windows uses and changed in Settings:
+  KUDUNMAP 1.2, KUDUCOPY 1.4, KUDURESCUE 1.4, KUDUSYNC 1.3, KUDUTREE 1.3, KUDUDIFF 1.1, KUDUPST 1.5, KUDUBROWSE 1.8,
+  KUDUTEXT 1.1, KUDUPIX 1.2, KUDUCK 1.2 and KUDUPACK 1.1. The shared code is `shared/Core/Lang.cs`, `LangCommon.cs` and
+  `shared/Views/LangUi.cs`; `tools/lang.py` lists and checks each app's texts. KUDUTUNES and the games are left for later.
 
 - **KUDUPIX 1.1**: People: faces found by themselves in the background on the PC (YuNet and SFace from OpenCV, run by
   ONNX Runtime, included in the installer), the same person's faces grouped, named once, new photos joining by
