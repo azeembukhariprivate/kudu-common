@@ -172,6 +172,8 @@ def looks_shown(text, before, theme_keys):
         return False
     if any(ord(ch) > 0x2FF and ch not in "…•‘’“”–—→←↑↓✓✕×·♥›‹" for ch in plain):
         return False  # already another language (language names, sample text)
+    if "\r\n" in t or t.startswith("HTTP/") or re.match(r"^[MLHVACZ][ \d,.\-]", t) and sum(ch.isdigit() for ch in t) > len(t) / 4:
+        return False  # protocol text, drawing data
     lead = re.sub(r"^(\{\d\}\s*)+", "", t)
     if re.search(r"</?\w+[^>]*>|=>|\(\);|\\[bdws]|;\s*$|^https?:|^[A-Za-z]:\\|^--?\w|\bfunction\b|\bvar \w+ =|^\w+://", t) or re.match(r"\s*[{\[<]", lead):
         return False
@@ -245,6 +247,20 @@ def collect(repo):
                         continue
                     seen.add(piece)
                     order.append((piece, os.path.relpath(path, folder)))
+        # Format.Count(n, "file") and Format.Count(n, "line needs", "lines need") show "{0} file(s)".
+    for root, dirs, files in os.walk(folder):
+        dirs[:] = sorted(d for d in dirs if d not in ("bin", "obj"))
+        for f in sorted(files):
+            if not f.endswith(".cs") or f in SKIP_FILES:
+                continue
+            path = os.path.join(root, f)
+            for m in re.finditer(r'\bCount\([^,()]+(?:\([^()]*\))?[^,()]*,\s*"([^"]+)"(?:\s*,\s*"([^"]+)")?\s*\)', open(path, encoding="utf-8-sig").read()):
+                one, many = m.group(1), m.group(2) or m.group(1) + "s"
+                for word in (one, many):
+                    text = "{0} " + word
+                    if text not in seen:
+                        seen.add(text)
+                        order.append((text, os.path.relpath(path, folder)))
     return order
 
 
