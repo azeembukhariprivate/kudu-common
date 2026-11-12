@@ -28,6 +28,15 @@ repository, not a library or package: `sync.py` copies the files in `shared/` in
 
 KUDUPACK and KUDUCK don't use kudu-common.
 
+## Other languages
+
+`shared/Core/Lang.cs` puts a text into the chosen language (English, Malayalam, Hindi, Spanish, French, Arabic) and
+`shared/Views/LangUi.cs` does it to every window as it's shown, so the apps' code stays in English. Each app keeps its
+texts in `src/<APP>/Lang/<code>.txt` (English, a tab, the translation; `{0}` where something is filled in), made with
+`python tools/lang.py list|merge|check ../<app>`. A text built from pieces needs `Lang.T` on each piece. Words every app
+uses are in `shared/Core/LangCommon.cs`. The credit "Made by Azeem, with Claude and ♥" stays in English. Azeem checks the
+Malayalam.
+
 ## Starting a new KUDU app
 
 Follow the "Starting a new KUDU app" checklist in README.md. Azeem creates the GitHub repository; Claude can't.
