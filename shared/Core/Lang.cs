@@ -125,7 +125,7 @@ namespace KuduApp.Core
             {
                 Match = new Regex(sb.ToString(), RegexOptions.Singleline | RegexOptions.CultureInvariant),
                 To = other,
-                ValuesOnly = words < 2 || letters < 6,
+                ValuesOnly = letters < 6 || words < 2 && fixedText.Trim().Length < 9,
                 Weight = fixedText.Length
             });
         }

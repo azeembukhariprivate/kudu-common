@@ -261,6 +261,13 @@ def collect(repo):
                     if text not in seen:
                         seen.add(text)
                         order.append((text, os.path.relpath(path, folder)))
+    # The names in a file dialog's list of kinds built with a value ("Videos|{0}"): the dialog looks up each name.
+    for text, where in list(order):
+        if re.search(r"\|(\{\d\}|\*\.)", text):
+            for name in text.split("|")[0::2]:
+                if name and name not in seen and re.search(r"[A-Za-z]{2}", name):
+                    seen.add(name)
+                    order.append((name, where))
     return order
 
 
