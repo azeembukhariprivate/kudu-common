@@ -179,8 +179,8 @@ def looks_shown(text, before, theme_keys):
         return False
     if re.fullmatch(r"[yMdHhmsftzg\-/:., ']+", t) or re.fullmatch(r"[#0,.%\- ]+", t):
         return False  # date and number formats
-    if "|*." in t:
-        return True
+    if "|*." in t or re.search(r"\bLang\.T\(\s*$", before):
+        return True  # a file dialog's kinds, or a text the code itself puts into the language
     words = plain.split()
     if len(words) >= 2:
         # A sentence or a label; but not code-like text (paths, switches, keys with dots or underscores throughout).
