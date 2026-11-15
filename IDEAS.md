@@ -153,6 +153,12 @@ In this order, each as its own version:
 5. **KUDUSYNC**: say so when a scheduled backup fails.
 6. **KUDUCK**: fill in and sign PDF forms; copy text from pictures and scanned PDFs.
 7. **KUDUDIFF**: compare two folders; compare Word, Excel and PDF files as text.
+   Agreed with Azeem (15 November 2026), waiting for "build": two versions. 1.2 compares two folders: one tree of
+   every file and subfolder marked same / different / only left / only right (the same ones can be hidden); files of
+   the same name are compared by their contents (different sizes are different at once); double-click a text file for
+   the side-by-side view; arrows copy a file or folder across, asking before replacing and keeping name.bak, never
+   deleting; a usual list left out by default (.git, .svn, node_modules, bin, obj, Thumbs.db, desktop.ini), changed in
+   Settings, with a switch to show everything; saved as a web page report. 1.3 then compares Word, Excel and PDF as text.
 8. **KUDUTEXT**: say who is speaking.
 9. **KUDUTUNES**: sheet music; a split between two instruments.
 
