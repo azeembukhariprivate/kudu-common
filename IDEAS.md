@@ -40,7 +40,7 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [ ] Split and join big archives (for email or USB sticks).
 
 ### KUDUDIFF (comparing files)
-- [ ] Compare two folders. *(Left out of v1 on purpose: a new scope to agree.)*
+- [x] Compare two folders. (1.2)
 - [ ] Compare Word, Excel and PDF files as text.
 - [ ] Ignore spaces, upper/lower case, or lines matching a pattern.
 - [ ] Three-way merge. *(Left out of v1 on purpose: a new scope to agree.)*
@@ -153,7 +153,7 @@ In this order, each as its own version:
 5. **KUDUSYNC**: say so when a scheduled backup fails.
 6. **KUDUCK**: fill in and sign PDF forms; copy text from pictures and scanned PDFs.
 7. **KUDUDIFF**: compare two folders; compare Word, Excel and PDF files as text.
-   Agreed with Azeem (15 November 2026), waiting for "build": two versions. 1.2 compares two folders: one tree of
+   Agreed with Azeem (15 November 2026), two versions. 1.2 (done, released) compares two folders: one tree of
    every file and subfolder marked same / different / only left / only right (the same ones can be hidden); files of
    the same name are compared by their contents (different sizes are different at once); double-click a text file for
    the side-by-side view; arrows copy a file or folder across, asking before replacing and keeping name.bak, never
@@ -165,6 +165,11 @@ In this order, each as its own version:
 Then: listing the apps in winget (free; Azeem tests the apps for some days first), and perhaps the Microsoft Store.
 
 ## Done
+
+- **KUDUDIFF 1.2**: compare two folders: one tree of every file and folder marked same / different / only on one side
+  (by contents), hide what's the same, open a changed file side by side, copy a file or folder across (asks before
+  replacing, keeps .bak, never deletes), the usual names left out (changeable in Settings), a web page report, and
+  folders on the right-click menu.
 
 - **Other languages** (November 2026): every Windows app can be used in English, Malayalam, Hindi, Spanish, French and
   Arabic (the windows mirrored for right-to-left), starting in the language Windows uses and changed in Settings:
