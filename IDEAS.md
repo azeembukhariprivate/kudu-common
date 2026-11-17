@@ -150,7 +150,16 @@ In this order, each as its own version:
 2. **KUDUPST**: save as a new PST file that Outlook can open.
 3. ~~Other languages in every app, Malayalam among them.~~ Done (see below).
 4. **KUDURESCUE**: preview before getting files back; repair photos that come back only partly whole.
+   Agreed with Azeem (17 November 2026), waiting for "build": the preview also shows a still picture from videos, the first
+   page of PDFs, the text of Word, Excel and PowerPoint files, and the name and length of music (all on the PC). Partly
+   whole JPEG and PNG photos and Word, Excel and PowerPoint files are repaired: the file as found is kept, plus
+   "name (repaired).ext" next to it (photos: the surviving part, the rest grey; Office: whatever text, sheets or slides
+   can still be read).
 5. **KUDUSYNC**: say so when a scheduled backup fails.
+   Agreed with Azeem (17 November 2026), waiting for "build": a failed scheduled backup, or one that hasn't run for longer
+   than its schedule, gets a notice that stays: the notification stays in Windows' notification centre, the tray icon
+   turns red, and the main window shows a banner until it's opened. "Done, with problems" gets the same, in orange,
+   saying how many files were skipped and why, with a way to run it again.
 6. **KUDUCK**: fill in and sign PDF forms; copy text from pictures and scanned PDFs.
 7. **KUDUDIFF**: compare two folders; compare Word, Excel and PDF files as text.
    Agreed with Azeem (15 November 2026), two versions. 1.2 (done, released) compares two folders: one tree of
