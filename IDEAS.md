@@ -156,7 +156,7 @@ In this order, each as its own version:
    "name (repaired).ext" next to it (photos: the surviving part, the rest grey; Office: whatever text, sheets or slides
    can still be read).
 5. **KUDUSYNC**: say so when a scheduled backup fails.
-   Agreed with Azeem (17 November 2026), waiting for "build": a failed scheduled backup, or one that hasn't run for longer
+   Done in KUDUSYNC 1.4 (agreed 17 November 2026): a failed scheduled backup, or one that hasn't run for longer
    than its schedule, gets a notice that stays: the notification stays in Windows' notification centre, the tray icon
    turns red, and the main window shows a banner until it's opened. "Done, with problems" gets the same, in orange,
    saying how many files were skipped and why, with a way to run it again.
@@ -174,6 +174,10 @@ In this order, each as its own version:
 Then: listing the apps in winget (free; Azeem tests the apps for some days first), and perhaps the Microsoft Store.
 
 ## Done
+
+- **KUDUSYNC 1.4**: a scheduled backup that failed, was paused, ran with problems (orange) or hasn't run for twice its
+  gap gets a Windows notification that stays in the notification centre, a red or orange dot on the icon by the clock,
+  and a banner in the main window (run it again, what happened, put away).
 
 - **KUDURESCUE 1.5**: the preview also shows a still from videos, the first page of PDFs, the words in Word, Excel and
   PowerPoint files and music's name, singer and length (all read in place, nothing written); partly whole JPEG and PNG
