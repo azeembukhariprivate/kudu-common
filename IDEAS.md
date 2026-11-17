@@ -13,8 +13,8 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [ ] Save the results as a new PST file that Outlook can open.
 
 ### KUDURESCUE (getting deleted files back)
-- [ ] Preview more kinds of files (videos, Office documents) before getting them back.
-- [ ] Repair photos and Office files that come back only partly whole.
+- [x] Preview more kinds of files (videos, Office documents) before getting them back. (1.5)
+- [x] Repair photos and Office files that come back only partly whole. (1.5)
 - [ ] More kinds of drives (memory cards and USB sticks formatted on a Mac or a camera).
 
 ### KUDUTREE (what's taking up space)
@@ -150,7 +150,7 @@ In this order, each as its own version:
 2. **KUDUPST**: save as a new PST file that Outlook can open.
 3. ~~Other languages in every app, Malayalam among them.~~ Done (see below).
 4. **KUDURESCUE**: preview before getting files back; repair photos that come back only partly whole.
-   Agreed with Azeem (17 November 2026), waiting for "build": the preview also shows a still picture from videos, the first
+   Done in KUDURESCUE 1.5 (agreed 17 November 2026): the preview also shows a still picture from videos, the first
    page of PDFs, the text of Word, Excel and PowerPoint files, and the name and length of music (all on the PC). Partly
    whole JPEG and PNG photos and Word, Excel and PowerPoint files are repaired: the file as found is kept, plus
    "name (repaired).ext" next to it (photos: the surviving part, the rest grey; Office: whatever text, sheets or slides
@@ -174,6 +174,10 @@ In this order, each as its own version:
 Then: listing the apps in winget (free; Azeem tests the apps for some days first), and perhaps the Microsoft Store.
 
 ## Done
+
+- **KUDURESCUE 1.5**: the preview also shows a still from videos, the first page of PDFs, the words in Word, Excel and
+  PowerPoint files and music's name, singer and length (all read in place, nothing written); partly whole JPEG and PNG
+  photos and Word, Excel and PowerPoint files get a repaired copy, "name (repaired).ext", next to the file as found.
 
 - **KUDUDIFF 1.2**: compare two folders: one tree of every file and folder marked same / different / only on one side
   (by contents), hide what's the same, open a changed file side by side, copy a file or folder across (asks before
