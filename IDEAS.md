@@ -161,6 +161,9 @@ In this order, each as its own version:
    turns red, and the main window shows a banner until it's opened. "Done, with problems" gets the same, in orange,
    saying how many files were skipped and why, with a way to run it again.
 6. **KUDUCK**: fill in and sign PDF forms; copy text from pictures and scanned PDFs.
+   Done in KUDUCK 1.3 (November 2026, choices made by Claude as Azeem asked): the filled form stays fillable; the
+   signature is a picture put on the page (drawn, typed or from a file), not a digital certificate; text found in
+   scans can be copied, or saved as a searchable PDF.
 7. **KUDUDIFF**: compare two folders; compare Word, Excel and PDF files as text.
    Agreed with Azeem (15 November 2026), two versions. 1.2 (done, released) compares two folders: one tree of
    every file and subfolder marked same / different / only left / only right (the same ones can be hidden); files of
@@ -169,11 +172,20 @@ In this order, each as its own version:
    deleting; a usual list left out by default (.git, .svn, node_modules, bin, obj, Thumbs.db, desktop.ini), changed in
    Settings, with a switch to show everything; saved as a web page report. 1.3 then compares Word, Excel and PDF as text.
 8. **KUDUTEXT**: say who is speaking.
+   Done in KUDUTEXT 1.2 (November 2026, choices made by Claude as Azeem asked): Speaker 1, Speaker 2... on each line in
+   .srt, .vtt and .txt; the number found by itself or chosen (2 to 6); names given and lines moved in Check text; a
+   27 MB voice model downloaded once, everything on the PC.
 9. **KUDUTUNES**: sheet music; a split between two instruments.
 
 Then: listing the apps in winget (free; Azeem tests the apps for some days first), and perhaps the Microsoft Store.
 
 ## Done
+
+- **KUDUTEXT 1.2**: say who is speaking: each line marked with its speaker in the subtitles and the text, the voices
+  told apart on the PC (WeSpeaker's voice model, run by ONNX Runtime), names given in Check text.
+
+- **KUDUCK 1.3**: fill in PDF forms, sign PDFs (drawn, typed or a picture), copy text from pictures and scanned PDFs,
+  and make scanned PDFs searchable.
 
 - **KUDUSYNC 1.4**: a scheduled backup that failed, was paused, ran with problems (orange) or hasn't run for twice its
   gap gets a Windows notification that stays in the notification centre, a red or orange dot on the icon by the clock,
