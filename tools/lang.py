@@ -166,6 +166,8 @@ def looks_shown(text, before, theme_keys):
     t = text.strip()
     if len(t) < 2 or len(text) > 900:
         return False
+    if any(ord(ch) < 32 and ch not in "\n\t" for ch in text):
+        return False  # a file's own bytes (a signature such as "SQLite format 3\0"), never shown
     plain = re.sub(r"\{\d\}", "", t)
     letters = sum(ch.isalpha() and ord(ch) < 128 for ch in plain)
     if letters < 2:
