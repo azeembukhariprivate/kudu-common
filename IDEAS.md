@@ -10,7 +10,7 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [x] Open several files at once and search across all of them. (1.3)
 - [ ] Find duplicate emails, and export without the copies.
 - [ ] Show whole conversations together.
-- [ ] Save the results as a new PST file that Outlook can open.
+- [x] Save the results as a new PST file that Outlook can open. (1.4)
 
 ### KUDURESCUE (getting deleted files back)
 - [x] Preview more kinds of files (videos, Office documents) before getting them back. (1.5)
@@ -26,7 +26,7 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 ### KUDUSYNC (keeping folders in step)
 - [x] Keep earlier versions of changed files, so a backup can go back in time. *(Done in KUDUSYNC 1.2: "Earlier versions".)*
 - [ ] Back up to a NAS or network share, reconnecting by itself.
-- [ ] An email or notification when a scheduled backup fails.
+- [x] A notification when a scheduled backup fails. (1.4; email left out)
 
 ### KUDUCOPY (fast copying)
 - [ ] Check copies byte for byte after copying, with a report.
@@ -52,8 +52,8 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 - [x] A note in plain words on what each open port could risk. (1.1)
 
 ### KUDUCK (images and PDFs)
-- [ ] Copy text from pictures and scanned PDFs (Windows' own text recognition).
-- [ ] Fill in and sign PDF forms.
+- [x] Copy text from pictures and scanned PDFs (Windows' own text recognition). (1.3)
+- [x] Fill in and sign PDF forms. (1.3)
 - [ ] Make PDFs smaller.
 - [ ] Resize and watermark many photos at once.
 - [ ] Put PDF pages in order by dragging.
@@ -88,7 +88,7 @@ Suggested first: tabs down the side, find any tab, mute a tab, the floating vide
 - [ ] Other languages, like the Windows apps (left for later, Azeem's choice).
 
 ### KUDUTEXT (speech to text)
-- [ ] Say who is speaking (on the PC, with a small model).
+- [x] Say who is speaking (on the PC, with a small model). (1.2)
 - [ ] A short summary of a long recording. *(Needs a large model on the PC or sending the text to a service; the second
       would break "nothing leaves your PC".)*
 
