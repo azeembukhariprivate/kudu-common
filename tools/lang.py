@@ -16,7 +16,7 @@ import sys
 
 LANGS = ["ml", "hi", "es", "fr", "ar"]
 
-SKIP_FILES = {"SelfTest.cs", "Screenshots.cs", "Lang.cs", "LangCommon.cs", "LangUi.cs", "Glyph.cs"}
+SKIP_FILES = {"SelfTest.cs", "SampleDocuments.cs", "Screenshots.cs", "Lang.cs", "LangCommon.cs", "LangUi.cs", "Glyph.cs"}
 
 # A single word right after one of these is a name the code uses, not something shown.
 CODE_BEFORE = re.compile(
@@ -238,7 +238,12 @@ def collect(repo):
                 continue
             path = os.path.join(root, f)
             code = open(path, encoding="utf-8-sig").read()
+            # A file full of code words (file formats, XML names) says so with this comment; only its texts given to
+            # Lang.T(...) or Shown(...) are then listed.
+            only_marked = "lang.py: only Lang.T texts" in code
             for start, text, holes, before, _ in joined(code):
+                if only_marked and not re.search(r"\b(?:Lang\.T|Shown)\(\s*$", before):
+                    continue
                 pieces = [text]
                 if "|*." in text:
                     pieces = text.split("|")[0::2]  # the names in a file dialog's list of kinds

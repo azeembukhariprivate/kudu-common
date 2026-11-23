@@ -41,7 +41,7 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 
 ### KUDUDIFF (comparing files)
 - [x] Compare two folders. (1.2)
-- [ ] Compare Word, Excel and PDF files as text.
+- [x] Compare Word, Excel and PDF files as text (and PowerPoint, .odt, .ods, .odp). (1.3)
 - [ ] Ignore spaces, upper/lower case, or lines matching a pattern.
 - [ ] Three-way merge. *(Left out of v1 on purpose: a new scope to agree.)*
 
@@ -171,6 +171,9 @@ In this order, each as its own version:
    the side-by-side view; arrows copy a file or folder across, asking before replacing and keeping name.bak, never
    deleting; a usual list left out by default (.git, .svn, node_modules, bin, obj, Thumbs.db, desktop.ini), changed in
    Settings, with a switch to show everything; saved as a web page report. 1.3 then compares Word, Excel and PDF as text.
+   1.3 done (23 November 2026): .docx, .xlsx, .pptx, .pdf, .odt, .ods and .odp compared as text, look only; Excel row by
+   row with formulas on a switch; Word text, tables, headers, footers and footnotes; slides with their notes; PDF page by
+   page; scans and pre-2007 files said so plainly.
 8. **KUDUTEXT**: say who is speaking.
    Done in KUDUTEXT 1.2 (November 2026, choices made by Claude as Azeem asked): Speaker 1, Speaker 2... on each line in
    .srt, .vtt and .txt; the number found by itself or chosen (2 to 6); names given and lines moved in Check text; a
@@ -180,6 +183,8 @@ In this order, each as its own version:
 Then: listing the apps in winget (free; Azeem tests the apps for some days first), and perhaps the Microsoft Store.
 
 ## Done
+
+- **KUDUDIFF 1.3**: Word, Excel, PowerPoint and PDF files (and the free office suites' kinds) compared as text, look only.
 
 - **KUDUTEXT 1.2**: say who is speaking: each line marked with its speaker in the subtitles and the text, the voices
   told apart on the PC (WeSpeaker's voice model, run by ONNX Runtime), names given in Check text.
