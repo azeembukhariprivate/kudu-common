@@ -1,3 +1,5 @@
+// Catches errors nobody expected, so the app tells the person in plain words (and writes them to a log) instead of
+// disappearing.
 using System;
 using System.Windows;
 using KuduApp.Core;
@@ -11,6 +13,7 @@ namespace KuduApp.Views
     /// </summary>
     public static class SafetyNet
     {
+        /// <summary>True once the error catchers are in place (they're set up only once).</summary>
         private static bool _installed;
 
         /// <summary>

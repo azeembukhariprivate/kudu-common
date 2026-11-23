@@ -1,3 +1,5 @@
+// Facts about the app (its name, version, where it's installed, its GitHub pages) and opening web pages, folders and
+// files safely.
 using System;
 using System.Diagnostics;
 using System.Reflection;
@@ -11,10 +13,14 @@ namespace KuduApp.Core
     /// </summary>
     public static partial class AppInfo
     {
+        /// <summary>The author's name, shown in About and in the installer.</summary>
         public const string Author = "Azeem Bukhari";
+        /// <summary>The GitHub account the apps live in.</summary>
         public const string RepoOwner = "azeembukhariprivate";
 
+        /// <summary>The app's page on GitHub.</summary>
         public static string RepoUrl => $"https://github.com/{RepoOwner}/{RepoName}";
+        /// <summary>The app's Releases page on GitHub, where new versions are published.</summary>
         public static string ReleasesUrl => RepoUrl + "/releases";
 
         public static Version Version
@@ -26,6 +32,7 @@ namespace KuduApp.Core
             }
         }
 
+        /// <summary>The version as three numbers, such as "1.4.0".</summary>
         public static string VersionText => Version.ToString(3);
 
         public static string ExePath
@@ -46,6 +53,10 @@ namespace KuduApp.Core
             catch { /* no browser available */ }
         }
 
+        /// <summary>
+        /// Opens a folder in File Explorer, with one file in it chosen when `select` is given (never with administrator
+        /// rights).
+        /// </summary>
         public static void OpenFolder(string folder, string select = null)
         {
             var args = select != null ? "/select,\"" + select + "\"" : "\"" + folder + "\"";
@@ -55,6 +66,9 @@ namespace KuduApp.Core
             catch { /* ignore */ }
         }
 
+        /// <summary>
+        /// Opens a file with the program Windows uses for its kind (never with administrator rights).
+        /// </summary>
         public static void OpenFile(string path)
         {
             if (Admin.IsAdmin && Unelevated.Open(path)) return;

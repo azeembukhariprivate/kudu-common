@@ -162,6 +162,8 @@ def joined(code):
     return result
 
 
+# Whether a text found in the code is something people see (not a resource key, a file name, a format or a piece of
+# code).
 def looks_shown(text, before, theme_keys):
     t = text.strip()
     if len(t) < 2 or len(text) > 900:
@@ -206,6 +208,7 @@ def looks_shown(text, before, theme_keys):
     return False
 
 
+# The app's source folder (src/<APP>).
 def app_folder(repo):
     src = os.path.join(repo, "src")
     for name in sorted(os.listdir(src)):
@@ -214,10 +217,12 @@ def app_folder(repo):
     sys.exit(repo + ": no src/<APP>/<APP>.csproj found")
 
 
+# Writes new lines, tabs and backslashes the way language files keep them ("\n", "\t", "\\").
 def escape(s):
     return s.replace("\\", "\\\\").replace("\n", "\\n").replace("\t", "\\t").replace("\r", "\\r")
 
 
+# The other way: "\n", "\t" and "\\" back to a new line, a tab and a backslash.
 def unescape(s):
     return re.sub(r"\\(.)", lambda m: {"n": "\n", "t": "\t", "r": "\r"}.get(m.group(1), m.group(1)), s)
 
@@ -278,10 +283,12 @@ def collect(repo):
     return order
 
 
+# The places to fill in that a text has ("{0}", "{1}"...), so a translation can be checked to have the same.
 def holes_of(s):
     return sorted(set(re.findall(r"\{(\d)\}", s)))
 
 
+# Reads a language file into {English: translation}.
 def read_lang(path):
     pairs = {}
     if os.path.isfile(path):
@@ -293,6 +300,7 @@ def read_lang(path):
     return pairs
 
 
+# Runs list, merge or check for an app (see the notes at the top).
 def main():
     if len(sys.argv) < 3:
         sys.exit(__doc__)

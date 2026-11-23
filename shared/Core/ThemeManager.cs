@@ -1,3 +1,5 @@
+// The light and dark looks: loads the theme's colours and styles (XAML kept inside the app), follows Windows' own
+// setting when asked, and makes window title bars match.
 using System;
 using System.IO;
 using System.Reflection;
@@ -14,8 +16,10 @@ namespace KuduApp.Core
     /// </summary>
     public static class ThemeManager
     {
+        /// <summary>True while the dark look is in use.</summary>
         public static bool IsDark { get; private set; }
 
+        /// <summary>Reads one of the app's theme files (Light, Dark or Styles), kept inside the app.</summary>
         public static ResourceDictionary LoadDictionary(string name)
         {
             var resource = "KuduApp.Themes." + name + ".xaml";
@@ -36,6 +40,10 @@ namespace KuduApp.Core
             Apply(mode);
         }
 
+        /// <summary>
+        /// Switches to the light or dark look (or the one Windows uses), for every open window and the ones opened
+        /// later.
+        /// </summary>
         public static void Apply(ThemeMode mode)
         {
             IsDark = mode == ThemeMode.Dark || (mode == ThemeMode.System && SystemPrefersDark());
@@ -63,6 +71,7 @@ namespace KuduApp.Core
             window.SourceInitialized += (s, e) => ApplyTitleBar(window);
         }
 
+        /// <summary>True when Windows is set to the dark look for apps.</summary>
         public static bool SystemPrefersDark()
         {
             try
@@ -78,6 +87,7 @@ namespace KuduApp.Core
             }
         }
 
+        /// <summary>Makes a window's title bar dark or light to match the app's look (Windows 10 and 11).</summary>
         private static void ApplyTitleBar(Window window)
         {
             try
@@ -95,6 +105,7 @@ namespace KuduApp.Core
             }
         }
 
+        /// <summary>Windows' call that changes how a window's frame is drawn (used for the dark title bar).</summary>
         [DllImport("dwmapi.dll")]
         private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attribute, ref int value, int size);
     }

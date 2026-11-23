@@ -1,3 +1,5 @@
+// A small icon drawn from a vector shape (a Geometry from the theme, such as "IconFolder"), coloured like the text
+// around it.
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -10,12 +12,17 @@ namespace KuduApp.Controls
     /// <summary>A 24x24 stroke icon that takes its colour from the surrounding text colour.</summary>
     public class Glyph : Viewbox
     {
+        /// <summary>
+        /// The shape to draw, usually a theme resource such as IconSave; setting it redraws the icon.
+        /// </summary>
         public static readonly DependencyProperty DataProperty = DependencyProperty.Register(
             nameof(Data), typeof(Geometry), typeof(Glyph),
             new PropertyMetadata(null, (d, e) => ((Glyph)d)._path.Data = (Geometry)e.NewValue));
 
+        /// <summary>The path that draws the shape, scaled to fit the icon's size.</summary>
         private readonly Path _path;
 
+        /// <summary>A 16 by 16 icon whose colour follows the text colour of the control it sits in.</summary>
         public Glyph()
         {
             Width = 16;

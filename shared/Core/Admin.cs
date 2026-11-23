@@ -1,3 +1,5 @@
+// Whether the app runs with administrator rights, and starting it again with them when a task needs it (Windows asks
+// first).
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +10,7 @@ namespace KuduApp.Core
 {
     public static class Admin
     {
+        /// <summary>Remembered after the first check, which asks Windows.</summary>
         private static bool? _isAdmin;
 
         public static bool IsAdmin

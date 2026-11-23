@@ -34,6 +34,7 @@ def app_folder(repo):
     sys.exit(f"{repo}: no src/<APP>/<APP>.csproj found")
 
 
+# The shared files, as paths inside shared/.
 def shared_files():
     for root, _, files in os.walk(SHARED):
         for f in sorted(files):
@@ -41,11 +42,14 @@ def shared_files():
                 yield os.path.relpath(os.path.join(root, f), SHARED).replace(os.sep, "/")
 
 
+# A shared file as it goes into an app: the header saying where it's from, and the app's own namespace in place of
+# KuduApp.
 def render(rel, namespace):
     text = open(os.path.join(SHARED, rel), encoding="utf-8").read()
     return HEADER + re.sub(r"\bKuduApp\b", namespace, text)
 
 
+# The kudu-common commit the files come from (recorded in each app's .kudu-common file).
 def commit():
     try:
         sha = subprocess.check_output(["git", "-C", HERE, "rev-parse", "HEAD"], text=True).strip()
@@ -55,6 +59,7 @@ def commit():
         return "unknown"
 
 
+# The kudu-common commit an app's copies were made from, as its .kudu-common file says.
 def recorded(repo):
     path = os.path.join(repo, RECORD)
     if not os.path.isfile(path):
@@ -65,6 +70,7 @@ def recorded(repo):
     return sha, files
 
 
+# Copies the shared files into one app and records the commit.
 def sync(repo):
     folder, namespace = app_folder(repo)
     files = list(shared_files())
@@ -91,6 +97,7 @@ def sync(repo):
     print(f"{repo}: {changed} file(s) updated ({namespace})")
 
 
+# Lists the app's copies that differ from the shared files (the app's build fails when there are any).
 def check(repo):
     folder, namespace = app_folder(repo)
     problems = []
@@ -109,6 +116,7 @@ def check(repo):
     return True
 
 
+# Runs sync for each app folder given (or check, with --check).
 def main(args):
     if not args:
         sys.exit(__doc__)
