@@ -81,8 +81,8 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 Suggested first: tabs down the side, find any tab, mute a tab, the floating video and dark pages; then the sign-in codes.
 
 ### KUDUTUNES (music into notes; a web app)
-- [ ] Sheet music (the five-line staff), which needs the beat and bar lines worked out.
-- [ ] A split between two instruments: a dividing line you set, and moving single notes across.
+- [x] Sheet music (the five-line staff), which needs the beat and bar lines worked out. (1.2)
+- [x] A split between two instruments: a dividing line you set, and moving single notes across. (1.2)
 - [ ] Tidy the timing so notes line up with the beat; move everything to another key.
 - [ ] Live listening; printing.
 - [ ] Other languages, like the Windows apps (left for later, Azeem's choice).
@@ -179,10 +179,16 @@ In this order, each as its own version:
    .srt, .vtt and .txt; the number found by itself or chosen (2 to 6); names given and lines moved in Check text; a
    27 MB voice model downloaded once, everything on the PC.
 9. **KUDUTUNES**: sheet music; a split between two instruments.
+   Done in KUDUTUNES 1.2 (23 November 2026, choices made by Claude as Azeem asked): a treble and bass staff on the
+   piano roll's time line; beat (following tempo changes), bars and key found by themselves and settable; MusicXML out;
+   a dividing line dragged in the roll and "Other part" (P); each instrument its own staff, MIDI track, sound and tabs.
 
 Then: listing the apps in winget (free; Azeem tests the apps for some days first), and perhaps the Microsoft Store.
 
 ## Done
+
+- **KUDUTUNES 1.2**: sheet music (found beat, bars and key; MusicXML) and two instruments (a dividing line, notes moved
+  across, a staff, MIDI track and sound each).
 
 - **KUDUDIFF 1.3**: Word, Excel, PowerPoint and PDF files (and the free office suites' kinds) compared as text, look only.
 
