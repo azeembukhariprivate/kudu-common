@@ -16,7 +16,7 @@ import sys
 
 LANGS = ["ml", "hi", "es", "fr", "ar"]
 
-SKIP_FILES = {"SelfTest.cs", "SampleDocuments.cs", "Screenshots.cs", "Lang.cs", "LangCommon.cs", "LangUi.cs", "Glyph.cs"}
+SKIP_FILES = {"SelfTest.cs", "InstallCheck.cs", "SampleDocuments.cs", "Screenshots.cs", "Lang.cs", "LangCommon.cs", "LangUi.cs", "Glyph.cs"}
 
 # A single word right after one of these is a name the code uses, not something shown.
 CODE_BEFORE = re.compile(
