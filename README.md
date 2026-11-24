@@ -90,6 +90,25 @@ New KUDU apps (C# screens, .NET Framework 4.8, like KUDUTREE) use this shared co
 Copying an existing app's layout (project file, `App.cs`, `Themes/`, installer, workflow) and renaming it is the
 quickest start; the shared files then come from step 1 instead of being copied.
 
+## Winget
+
+The Windows apps are listed in winget (Windows' own package manager) as `AzeemBukhari.<APP>`, with lower-case short
+names, so `winget install kuducopy` works.
+
+- `winget/apps.json` holds each app's winget details: its name, the installer's file name in its releases, Inno
+  Setup's product code, the licence, a short description, a longer one and tags. `"send": true` lets it be sent.
+- `tools/winget.py check` checks those details and the entries made from them; `check --apps <folder>` also checks
+  them against the apps' own installers (the `winget` job in `check.yml` does this on every push).
+  `tools/winget.py plan <folder>` makes each app's entry from its latest release (its SHA-256 is the one GitHub keeps)
+  and lists what to send.
+- `.github/workflows/winget.yml` runs every day and when started by hand. It keeps the entries as a build download
+  ("winget-entries") and sends each app marked "send" whose version isn't in winget yet, as a pull request to
+  Microsoft's winget-pkgs, with Microsoft's wingetcreate (pinned by its SHA-256, its reporting switched off). It
+  needs the `WINGET_TOKEN` secret here: a classic GitHub token with only the "public_repo" scope. Without it nothing
+  is sent. A version already waiting at Microsoft, or turned down there, isn't sent again.
+- A new app: add it to `winget/apps.json` (and to the `winget` job's list in `check.yml`) with `"send": false`,
+  look at its entry in the build download, then set `"send": true`.
+
 ## The rule
 
 Don't edit a shared file inside an app: each copy starts with a comment saying it comes from here. Every app's build

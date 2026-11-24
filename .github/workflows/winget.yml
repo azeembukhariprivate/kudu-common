@@ -1,0 +1,88 @@
+name: Winget
+
+# Lists the KUDU apps in winget (Windows' own package manager) and keeps them up to date.
+# Every day (and when started by hand) it makes each app's winget entry from its latest GitHub release and keeps
+# them as a build download to look at. Apps marked "send" in winget/apps.json whose version isn't in winget yet
+# are sent to Microsoft's winget-pkgs as a pull request, with Microsoft's wingetcreate and the WINGET_TOKEN secret
+# (a classic token with only "public_repo"). Without that secret nothing is sent.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: winget
+  cancel-in-progress: false
+
+env:
+  # Microsoft's wingetcreate, pinned: its address and SHA-256 are the ones in winget's own entry for it.
+  WINGETCREATE_URL: https://github.com/microsoft/winget-create/releases/download/v1.28.1.0/wingetcreate.exe
+  WINGETCREATE_SHA256: 63D980BA79E97042395BD6EB5992C2DB9E01E9E7A8A22958A95C288F27310413
+
+jobs:
+  winget:
+    runs-on: windows-latest
+    env:
+      HAS_TOKEN: ${{ secrets.WINGET_TOKEN != '' }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+
+      - name: Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Check the apps' winget details
+        run: python tools/winget.py check
+
+      - name: Make the entries and work out what to send
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/winget.py plan out/winget
+
+      - name: Keep the entries as a build download
+        uses: actions/upload-artifact@v6
+        with:
+          name: winget-entries
+          path: out/winget
+
+      - name: .NET 9 (wingetcreate runs on it)
+        if: ${{ env.HAS_TOKEN == 'true' }}
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Send to winget
+        shell: pwsh
+        env:
+          WINGET_CREATE_GITHUB_TOKEN: ${{ secrets.WINGET_TOKEN }}
+        run: |
+          $rows = Get-Content out/winget/plan.json -Raw | ConvertFrom-Json
+          $send = @($rows | Where-Object { $_.send })
+          if ($send.Count -eq 0) { Write-Host "Nothing to send."; exit 0 }
+          if ($env:HAS_TOKEN -ne 'true') {
+            Write-Host "::warning::$($send.Count) entries are ready but the WINGET_TOKEN secret isn't set, so nothing was sent."
+            exit 0
+          }
+
+          Invoke-WebRequest $env:WINGETCREATE_URL -OutFile wingetcreate.exe
+          $hash = (Get-FileHash wingetcreate.exe -Algorithm SHA256).Hash
+          if ($hash -ne $env:WINGETCREATE_SHA256) { throw "wingetcreate.exe isn't the expected file ($hash)." }
+
+          # wingetcreate sends nothing about its use.
+          $settings = Join-Path $env:LOCALAPPDATA 'Microsoft\WindowsPackageManagerManifestCreator'
+          New-Item -ItemType Directory -Force $settings | Out-Null
+          '{ "Telemetry": { "disable": true } }' | Set-Content (Join-Path $settings 'settings.json') -Encoding utf8
+
+          $failed = 0
+          foreach ($row in $send) {
+            Write-Host "Sending $($row.title)"
+            ./wingetcreate.exe submit --no-open --prtitle $row.title $row.folder
+            if ($LASTEXITCODE -ne 0) { Write-Host "::error::$($row.app) $($row.version) wasn't sent."; $failed++ }
+          }
+          if ($failed -gt 0) { exit 1 }

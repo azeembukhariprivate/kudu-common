@@ -45,3 +45,10 @@ Follow the "Starting a new KUDU app" checklist in README.md. Azeem creates the G
 
 `IDEAS.md` is the pending list of additions to the apps and possible new apps. Take them one at a time when Azeem asks;
 when one is built, move it to "Done" there with its version.
+
+## Winget
+
+The Windows apps are listed in winget as `AzeemBukhari.<APP>` (short names in lower case). `winget/apps.json` holds
+their details; `.github/workflows/winget.yml` sends each new version by itself every day (README.md, "Winget"). The
+first listings go one at a time: KUDUCOPY first, the other 11 once it's merged. Set an app's `"send"` to true only
+after Azeem has seen its entry.

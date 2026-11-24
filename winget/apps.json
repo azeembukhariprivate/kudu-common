@@ -1,0 +1,103 @@
+{
+  "publisher": "Azeem Bukhari",
+  "publisherId": "AzeemBukhari",
+  "owner": "azeembukhariprivate",
+  "apps": [
+    {
+      "name": "KUDUCOPY", "repo": "kuducopy", "send": false,
+      "asset": "KUDUCOPY-{version}-setup.exe", "productCode": "{9E3D7A41-2C6B-4F8E-A1D5-3B7C9E0F2A64}_is1",
+      "architecture": "neutral", "license": "MIT",
+      "short": "Fast, reliable file copying for Windows, built on Windows' own Robocopy.",
+      "description": "Copy and move files and folders quickly and safely: a preview of what will happen, a choice for files already there, checks that copies match, pause and carry on, a queue for several jobs, compare two folders, and every Robocopy option in plain words. Free and open source; nothing about you is sent anywhere.",
+      "tags": ["copy", "file-copy", "robocopy", "backup", "files", "open-source"]
+    },
+    {
+      "name": "KUDUNMAP", "repo": "kudunmap", "send": false,
+      "asset": "KUDUNMAP-{version}-setup.exe", "productCode": "{4B7E2C91-6A3D-4F0E-9D25-7C1A8B3E5F42}_is1",
+      "architecture": "neutral", "license": "Nmap Public Source License", "scopes": ["user", "machine"],
+      "short": "Scan your network without typing commands: a visual front-end for Nmap.",
+      "description": "Choose what to scan and see every device and open port, with a plain-words note on what each open port could risk, a drawing of the network, saved scans compared over time, and scans that run on a schedule. Needs Nmap, installed separately (nmap.org). KUDUNMAP is not part of the Nmap Project.",
+      "tags": ["nmap", "network", "scanner", "security", "ports", "open-source"]
+    },
+    {
+      "name": "KUDURESCUE", "repo": "kudurescue", "send": false,
+      "asset": "KUDURESCUE-{version}-setup.exe", "productCode": "{4C8B2E17-9A3F-4D61-B0E5-7F2A6C1D9E83}_is1",
+      "architecture": "neutral", "license": "MIT",
+      "short": "Get deleted files back on Windows: NTFS, FAT32 and exFAT drives, memory cards and disk images.",
+      "description": "Find deleted files with a quick scan or a deep scan, see how likely each one is to come back whole, preview photos, videos, PDFs and Office files first, repair partly whole photos and documents, and save them to another drive (never the one they're on). Also reads the Recycle Bin and Windows' Previous Versions.",
+      "tags": ["recovery", "undelete", "data-recovery", "deleted-files", "ntfs", "open-source"]
+    },
+    {
+      "name": "KUDUSYNC", "repo": "kudusync", "send": false,
+      "asset": "KUDUSYNC-{version}-setup.exe", "productCode": "{9E2F6B41-37C8-4A0D-B5E6-1C84D27F3A95}_is1",
+      "architecture": "neutral", "license": "MIT",
+      "short": "Keep folders in step: backups, mirrors and two-way sync, on a schedule or as files change.",
+      "description": "Pairs of folders kept in step on USB drives, network shares or the same PC, with a preview first, earlier versions of changed files kept, schedules, live sync from the tray, a run when a drive is plugged in, notices when a backup fails, and bringing in SyncToy's pairs.",
+      "tags": ["sync", "backup", "mirror", "folders", "synctoy", "open-source"]
+    },
+    {
+      "name": "KUDUTREE", "repo": "kudutree", "send": false,
+      "asset": "KUDUTREE-{version}-setup.exe", "productCode": "{5B7D3E92-A16C-4F08-9D2B-E43C71A85F06}_is1",
+      "architecture": "neutral", "license": "MIT",
+      "short": "See what's taking up space: folder tree, treemap, file types, duplicates and saved scans.",
+      "description": "Scan a drive or folder (very quickly on NTFS drives) and see the biggest folders and files, a treemap, file types, old files, empty folders and exact duplicates; compare with an earlier scan, and clean up safely: to the Recycle Bin, with system files protected, plus a list of leftovers that are safe to clean.",
+      "tags": ["disk-usage", "disk-space", "treemap", "cleanup", "duplicates", "open-source"]
+    },
+    {
+      "name": "KUDUDIFF", "repo": "kududiff", "send": false,
+      "asset": "KUDUDIFF-{version}-setup.exe", "productCode": "{F9B2A431-9DF1-458C-AE6D-2570B59A2A0B}_is1",
+      "architecture": "neutral", "license": "MIT",
+      "short": "Compare two text or code files side by side, or two folders, and see what changed.",
+      "description": "Changes marked line by line and word by word, copied across with one click and saved with a .bak copy; ignore spaces, case or patterns; moved blocks found; patches and web page reports. Also compares two folders, and Word, Excel, PowerPoint and PDF files as text.",
+      "tags": ["diff", "compare", "merge", "text", "code", "open-source"]
+    },
+    {
+      "name": "KUDUPST", "repo": "kudupst", "send": false,
+      "asset": "KUDUPST-{version}-setup.exe", "productCode": "{72358240-0504-4C87-9BB0-9C42E8ED2569}_is1",
+      "architecture": "neutral", "license": "MIT",
+      "short": "View, search and export Outlook data files (PST, OST) and emails (.msg, .eml) without Outlook.",
+      "description": "Open several Outlook files at once and search across them; read emails, contacts and the calendar; find deleted items still inside a file; export to .eml, PDF, CSV, vCard, iCalendar or a new PST file. Files are only ever read, never changed.",
+      "tags": ["outlook", "pst", "ost", "email", "msg", "open-source"]
+    },
+    {
+      "name": "KUDUBROWSE", "repo": "kudubrowse", "send": false,
+      "asset": "KUDUBROWSE-{version}-setup.exe", "productCode": "{893DD256-DB89-414A-96D4-2D2DB03B0F9F}_is1",
+      "architecture": "neutral", "license": "MIT",
+      "short": "A private everyday web browser for Windows, built on Microsoft's WebView2.",
+      "description": "Tabs (also down the side), ad and tracker blocking, passwords with two-step sign-in codes, bringing in from Chrome, rooms with separate logins, a fast download manager, dark pages, reading mode and video in a floating window. The browser itself collects nothing.",
+      "tags": ["browser", "web-browser", "privacy", "ad-blocker", "webview2", "open-source"]
+    },
+    {
+      "name": "KUDUTEXT", "repo": "kudutext", "send": false,
+      "asset": "KUDUTEXT-{version}-setup.exe", "productCode": "{8710F7A5-8817-43A5-8960-4DB0B0CEF254}_is1",
+      "architecture": "x64", "license": "MIT",
+      "short": "Speech to text and subtitles on your own PC: .srt, .vtt and .txt from videos and recordings.",
+      "description": "A list of videos and recordings turned into text one after another with whisper.cpp, on the PC: who is speaking, checking and correcting the text while hearing each line, and putting the subtitles into the video. Nothing about you is sent anywhere.",
+      "tags": ["speech-to-text", "subtitles", "transcription", "whisper", "srt", "open-source"]
+    },
+    {
+      "name": "KUDUPIX", "repo": "kudupix", "send": false,
+      "asset": "KUDUPIX-{version}-setup.exe", "productCode": "{318224FF-15F5-410A-B85E-8302F663155E}_is1",
+      "architecture": "x64", "license": "MIT",
+      "short": "Your photos and videos, organised: a fast grid by day, stars, tags, albums, people and simple fixes.",
+      "description": "Everything in the folders you choose, grouped by day; stars, tags and albums; people found and named on the PC; fixes that never spoil the original; duplicates and look-alikes; export and slideshows. Nothing about you is sent anywhere.",
+      "tags": ["photos", "photo-organizer", "gallery", "albums", "faces", "open-source"]
+    },
+    {
+      "name": "KUDUPACK", "repo": "kudupack", "send": false,
+      "asset": "KUDUPACK-{version}-setup.exe", "productCode": "{8C1B5E6A-4E0B-4C7A-9C6E-2B9E4F0A7D11}_is1",
+      "architecture": "neutral", "license": "MIT",
+      "short": "A lightweight archive tool: open, extract and create ZIP, 7Z, RAR, TAR.GZ and more.",
+      "description": "Open and extract archives safely (nothing is ever written outside the folder chosen, and nothing is replaced without asking), make new ones, and use it from File Explorer's right-click menu. Archive work is done by the bundled 7-Zip.",
+      "tags": ["archive", "zip", "7zip", "rar", "extract", "open-source"]
+    },
+    {
+      "name": "KUDUCK", "repo": "kuduck", "send": false,
+      "asset": "KUDUCK-Setup-{version}.exe", "productCode": "{8B0E6A55-3F0B-4C7E-9B7A-6C2D1F0A9E41}_is1",
+      "architecture": "x64", "license": "MIT",
+      "short": "Image and PDF tools, one click away by the clock: convert, resize, remove backgrounds, merge, sign and more.",
+      "description": "A toolbox for pictures and PDFs: resize, convert and compress images, passport photos, remove backgrounds; merge, split, compress and lock PDFs, put pages in order, turn PDFs into Word or Excel, fill in and sign forms, copy text from pictures and scans. All on the PC. A desktop duck can be switched on.",
+      "tags": ["pdf", "image", "converter", "background-remover", "pdf-tools", "open-source"]
+    }
+  ]
+}

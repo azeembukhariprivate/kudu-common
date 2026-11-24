@@ -40,3 +40,20 @@ jobs:
         run: |
           APP=$(echo "${{ matrix.app }}" | tr a-z A-Z)
           dotnet run --project "app/tests/$APP.Tests" -c Release
+
+  winget:
+    # Checks the apps' winget details (winget/apps.json) against their own installers.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+
+      - name: Get the apps
+        run: |
+          mkdir apps
+          for a in kudunmap kuducopy kudurescue kudusync kudutree kududiff kudupst kudubrowse kudutext kudupix kudupack kuduck; do
+            git clone --depth 1 "https://github.com/azeembukhariprivate/$a" "apps/$a"
+          done
+
+      - name: Check the winget details
+        run: python3 tools/winget.py check --apps apps
