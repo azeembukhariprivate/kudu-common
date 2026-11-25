@@ -52,3 +52,6 @@ The Windows apps are listed in winget as `AzeemBukhari.<APP>` (short names in lo
 their details; `.github/workflows/winget.yml` sends each new version by itself every day (README.md, "Winget"). The
 first listings go one at a time: KUDUCOPY first, the other 11 once it's merged. Set an app's `"send"` to true only
 after Azeem has seen its entry.
+
+**On hold (Azeem, 25 November 2026):** Azeem is still testing the apps. Don't mark any app `"send"` and don't ask for the
+token until he says the testing is done. The daily run only makes the entries to look at; it sends nothing.

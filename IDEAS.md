@@ -183,7 +183,7 @@ In this order, each as its own version:
    piano roll's time line; beat (following tempo changes), bars and key found by themselves and settable; MusicXML out;
    a dividing line dragged in the roll and "Other part" (P); each instrument its own staff, MIDI track, sound and tabs.
 
-Then: listing the apps in winget (agreed 24 November 2026: each new version sent by itself from kudu-common every day; KUDUCOPY first, the other 11 once it is merged), and perhaps the Microsoft Store.
+Then: listing the apps in winget (agreed 24 November 2026: each new version sent by itself from kudu-common every day; KUDUCOPY first, the other 11 once it is merged; built, but on hold until Azeem finishes testing the apps), and perhaps the Microsoft Store.
 
 ## Done
 
