@@ -61,15 +61,15 @@ Azeem says "build". When something is built, move it to "Done" at the end with i
 ### KUDUBROWSE (web browser)
 - [x] Tabs down the side (a list on the left, for many tabs). *(Done in 1.3.)*
 - [x] Find any tab (Ctrl+Shift+A): open tabs, recently closed tabs, bookmarks and history by typing a few letters. *(Done in 1.4.)*
-- [ ] Saved tab sets ("Work", "Trip planning"): put a set of tabs away and open them all again later.
+- [x] Saved tab sets ("Work", "Trip planning"): put a set of tabs away and open them all again later. *(Done in 1.9.)*
 - [x] Mute a tab, with a sound icon on tabs that are playing. *(Done in 1.3.)*
 - [x] A video in a small floating window that stays on top. *(Done in 1.5.)*
 - [x] Dark pages everywhere: turn any site dark, even ones without a dark look. *(Done in 1.6.)*
-- [ ] Read later: keep a page to read afterwards, saved so it opens without the internet.
+- [x] Read later: keep a page to read afterwards, saved so it opens without the internet. *(Done in 1.9.)*
 - [x] Two-step sign-in codes (the 6-digit codes that change every 30 seconds) in the password manager, filled in with
       the password. *(Done in 1.7.)*
-- [ ] Secure connections only: warn before opening a site without https.
-- [ ] Clear when closing: forget cookies and history when the browser closes, for some sites or all.
+- [x] Secure connections only: warn before opening a site without https. *(Done in 1.9.)*
+- [x] Clear when closing: forget cookies and history when the browser closes, for some sites or all. *(Done in 1.9.)*
 - [ ] A page of what each site may use (camera, microphone, location, notifications), with a way to take it back.
 - [ ] Chrome extensions (the engine can load them). *(Extensions can read the pages you visit, so this needs care to
       keep the "collects nothing" promise.)*
@@ -186,6 +186,10 @@ In this order, each as its own version:
 Then: listing the apps in winget (agreed 24 November 2026: each new version sent by itself from kudu-common every day; KUDUCOPY first, the other 11 once it is merged; built, but on hold until Azeem finishes testing the apps), and perhaps the Microsoft Store.
 
 ## Done
+
+- **KUDUBROWSE 1.9**: tab sets (a window's tabs put away under a name and opened again later), read later (pages kept
+  whole on the PC, opened without the internet), secure connections (http opened as https, a warning when a site has
+  none), and forgetting sites' cookies and history when the browser closes (some sites or all).
 
 - **KUDUTUNES 1.2**: sheet music (found beat, bars and key; MusicXML) and two instruments (a dividing line, notes moved
   across, a staff, MIDI track and sound each).
